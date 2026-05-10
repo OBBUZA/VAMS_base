@@ -1,5 +1,5 @@
 -- Создание представления для демонстрации активных участников и их ролей в мероприятиях
-CREATE VIEW active_participants2 AS
+CREATE VIEW active_participants AS
 SELECT v.name, e.title, p.role
 FROM participation p
 JOIN volunteers v USING (volunteer_id)
